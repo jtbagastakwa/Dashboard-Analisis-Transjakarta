@@ -1,0 +1,9 @@
+streamlit
+pandas
+matplotlib
+seaborn
+matplotlib_venn
+langchain_core
+langchain_google_genai
+langchain
+plotly

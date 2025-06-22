@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env
+.venv/
+venv/
+
+# Streamlit secrets lokal
+.streamlit/secrets.toml
+
+# Lainnya
+*.DS_Store
