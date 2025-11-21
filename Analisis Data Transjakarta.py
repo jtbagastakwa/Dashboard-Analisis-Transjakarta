@@ -5,7 +5,7 @@ import seaborn as sns
 from matplotlib_venn import venn2
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 import plotly.express as px
 from matplotlib.ticker import MaxNLocator
 
@@ -157,7 +157,7 @@ set_page_style() # Memanggil fungsi style baru
 # Inisialisasi Model AI
 try:
     google_api_key = st.secrets["GOOGLE_API_KEY"]
-    chat_model = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=google_api_key, temperature=0.7)
+    chat_model = ChatGoogleGenerativeAI(model="gemini-3", google_api_key=google_api_key, temperature=0.7)
     st.session_state.api_configured = True
 except (FileNotFoundError, KeyError):
     st.error("Konfigurasi GOOGLE_API_KEY tidak ditemukan di Streamlit Secrets. Chatbot tidak akan berfungsi.")
