@@ -157,7 +157,7 @@ set_page_style() # Memanggil fungsi style baru
 # Inisialisasi Model AI
 try:
     google_api_key = st.secrets["GOOGLE_API_KEY"]
-    chat_model = ChatGoogleGenerativeAI(model="gemini-3", google_api_key=google_api_key, temperature=0.7)
+    chat_model = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=google_api_key, temperature=0.7)
     st.session_state.api_configured = True
 except (FileNotFoundError, KeyError):
     st.error("Konfigurasi GOOGLE_API_KEY tidak ditemukan di Streamlit Secrets. Chatbot tidak akan berfungsi.")
